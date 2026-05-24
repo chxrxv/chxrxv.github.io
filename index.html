@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Charuvi Suresh — AI Developer & Full Stack Engineer</title>
+  <meta name="description" content="Charuvi Suresh — AI-focused Full Stack Developer building intelligent AI-powered products with OpenAI, React, Flask & Python."/>
+  <meta name="keywords" content="Charuvi Suresh,AI developer,full stack,OpenAI,React,Python,Flask,machine learning,portfolio"/>
+  <meta name="author" content="Charuvi Suresh"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://chxrxv.github.io/"/>
+  <meta property="og:title" content="Charuvi Suresh — AI Developer"/>
+  <meta property="og:description" content="Building intelligent AI-powered products. CS student · AI · Full Stack · ML."/>
+  <meta property="og:image" content="https://chxrxv.github.io/assets/og-image.png"/>
+  <meta property="twitter:card" content="summary_large_image"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>"/>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">✦</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <div class="loader-text">Loading portfolio<span class="loader-dots"></span></div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-follower"></div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-progress"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">CS<span class="acc">✦</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <canvas id="particles"></canvas>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge reveal-up" style="--delay:.1s">
+      <span class="badge-dot"></span>
+      Available for internships · 2025
+    </div>
+    <h1 class="hero-name reveal-up" style="--delay:.2s">Charuvi<br/><em>Suresh.</em></h1>
+    <div class="hero-role reveal-up" style="--delay:.35s"><span id="typed-text"></span><span class="cursor-blink">|</span></div>
+    <p class="hero-bio reveal-up" style="--delay:.5s">CS student building <strong>intelligent AI-powered products</strong> —<br class="br-hide"/>from OpenAI APIs to full-stack systems that actually ship.</p>
+    <div class="hero-ctas reveal-up" style="--delay:.65s">
+      <a href="#projects" class="btn-primary magnetic"><span>View my work</span><i class="fas fa-arrow-right"></i></a>
+      <a href="resume.pdf" download class="btn-ghost magnetic"><i class="fas fa-download"></i><span>Resume</span></a>
+    </div>
+    <div class="hero-socials reveal-up" style="--delay:.8s">
+      <a href="https://github.com/chxrxv" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/charuvisuresh" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:charuvi@email.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint"><div class="scroll-line"></div><span>scroll</span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-label reveal-up">01 — About</div>
+    <div class="about-grid">
+      <div class="about-left reveal-up" style="--delay:.1s">
+        <h2 class="section-heading">Building the<br/><em>future of AI</em><br/>one product at a time.</h2>
+        <p class="about-text">I'm a Computer Science student obsessed with the intersection of AI and real-world products. I don't just study machine learning — I build things with it.</p>
+        <p class="about-text">My stack spans <strong>Python, React, Flask, Streamlit</strong> and the OpenAI + Claude APIs. I'm drawn to making AI feel natural, useful, and beautifully designed.</p>
+        <div class="about-stats">
+          <div class="stat-item"><span class="stat-num">6+</span><span class="stat-label">AI Projects Shipped</span></div>
+          <div class="stat-item"><span class="stat-num">5+</span><span class="stat-label">Certifications</span></div>
+          <div class="stat-item"><span class="stat-num">∞</span><span class="stat-label">Curiosity</span></div>
+        </div>
+      </div>
+      <div class="about-right reveal-up" style="--delay:.25s">
+        <div class="about-card glass-card">
+          <div class="about-card-header">
+            <div class="card-dot g"></div><div class="card-dot y"></div><div class="card-dot r"></div>
+            <span class="card-title">charuvi.ai</span>
+          </div>
+          <div class="about-card-body">
+            <div class="code-line"><span class="ck">role</span><span class="co">=</span><span class="cs">"AI Full Stack Developer"</span></div>
+            <div class="code-line"><span class="ck">focus</span><span class="co">=</span><span class="cs">"Building AI products"</span></div>
+            <div class="code-line"><span class="ck">stack</span><span class="co">=</span><span class="ca">["React","Flask","Python"]</span></div>
+            <div class="code-line"><span class="ck">passion</span><span class="co">=</span><span class="cs">"Making AI feel human"</span></div>
+            <div class="code-line"><span class="ck">status</span><span class="co">=</span><span class="cg">"Open to internships ✓"</span></div>
+          </div>
+        </div>
+        <div class="about-interests">
+          <span class="interest-tag">🤖 AI/ML</span>
+          <span class="interest-tag">⚡ Full Stack</span>
+          <span class="interest-tag">🔐 Cybersecurity</span>
+          <span class="interest-tag">📊 Data Science</span>
+          <span class="interest-tag">🚀 Startups</span>
+          <span class="interest-tag">✨ UI/UX</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-label reveal-up">02 — Projects</div>
+    <div class="section-header reveal-up" style="--delay:.1s">
+      <h2 class="section-heading">Things I've <em>built.</em></h2>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI/ML</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="data">Data</button>
+      </div>
+    </div>
+    <div class="projects-bento">
+
+      <!-- Featured -->
+      <div class="project-card featured reveal-up" style="--delay:.1s" data-category="ai fullstack">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags">
+            <span class="ptag">React</span><span class="ptag">Flask</span><span class="ptag">OpenAI</span>
+            <span class="ptag ptag-featured">⭐ Featured</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/chxrxv" target="_blank" class="plink"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" class="plink live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-icon">📄</div>
+        <h3 class="project-title">Resume Analyzer</h3>
+        <p class="project-desc">AI-powered resume analyzer generating ATS scores, identifying skill gaps, and delivering personalized improvement suggestions using GPT-4o. Upload PDF → instant intelligence.</p>
+        <div class="project-footer">
+          <div class="project-stack">
+            <span>React</span><span>Flask</span><span>OpenAI GPT-4o</span><span>PyPDF2</span><span>Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- InterviewIQ -->
+      <div class="project-card reveal-up" style="--delay:.2s" data-category="ai">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags"><span class="ptag">Streamlit</span><span class="ptag">OpenAI</span></div>
+          <div class="project-links">
+            <a href="https://github.com/chxrxv" target="_blank" class="plink"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" class="plink live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-icon">🎯</div>
+        <h3 class="project-title">InterviewIQ</h3>
+        <p class="project-desc">AI interview coach with mock sessions, real-time feedback, confidence scoring, and full interview history.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span>Python</span><span>Streamlit</span><span>SQLite</span></div>
+        </div>
+      </div>
+
+      <!-- RegAI -->
+      <div class="project-card reveal-up" style="--delay:.3s" data-category="ai">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags"><span class="ptag">Compliance</span><span class="ptag">AI</span></div>
+          <div class="project-links">
+            <a href="https://github.com/chxrxv" target="_blank" class="plink"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" class="plink live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-icon">🔐</div>
+        <h3 class="project-title">RegAI Compliance Checker</h3>
+        <p class="project-desc">Automated regulatory compliance checker that flags violations using AI document analysis.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span>Python</span><span>OpenAI</span><span>Flask</span></div>
+        </div>
+      </div>
+
+      <!-- Sports -->
+      <div class="project-card reveal-up" style="--delay:.15s" data-category="ai data">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags"><span class="ptag">ML</span><span class="ptag">Python</span></div>
+          <div class="project-links">
+            <a href="https://github.com/chxrxv" target="_blank" class="plink"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" class="plink live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-icon">🏅</div>
+        <h3 class="project-title">Sports Career Prediction</h3>
+        <p class="project-desc">ML system predicting athlete career trajectories using performance metrics and historical data.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span>scikit-learn</span><span>Pandas</span><span>Python</span></div>
+        </div>
+      </div>
+
+      <!-- Rubrics -->
+      <div class="project-card reveal-up" style="--delay:.25s" data-category="fullstack">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags"><span class="ptag">SAP CAP</span><span class="ptag">Enterprise</span></div>
+          <div class="project-links">
+            <a href="https://github.com/chxrxv" target="_blank" class="plink"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" class="plink live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-icon">📋</div>
+        <h3 class="project-title">Rubrics Management System</h3>
+        <p class="project-desc">Enterprise-grade assessment rubrics platform with role-based access and automated grading workflows.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span>SAP CAP</span><span>Node.js</span><span>SQL</span></div>
+        </div>
+      </div>
+
+      <!-- Recipe -->
+      <div class="project-card reveal-up" style="--delay:.35s" data-category="fullstack">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags"><span class="ptag">React</span><span class="ptag">API</span></div>
+          <div class="project-links">
+            <a href="https://github.com/chxrxv" target="_blank" class="plink"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" class="plink live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project-icon">🍳</div>
+        <h3 class="project-title">Recipe Finder App</h3>
+        <p class="project-desc">Smart recipe discovery with ingredient-based search, dietary filters, and a clean responsive interface.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span>React</span><span>REST API</span><span>CSS</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-label reveal-up">03 — Skills</div>
+    <h2 class="section-heading reveal-up" style="--delay:.1s">My <em>toolkit.</em></h2>
+    <div class="skills-grid">
+      <div class="skill-category reveal-up" style="--delay:.1s">
+        <h4 class="skill-cat-label"><i class="fas fa-brain"></i> AI / Machine Learning</h4>
+        <div class="skill-pills">
+          <span class="skill-pill sp-purple">OpenAI APIs</span>
+          <span class="skill-pill sp-purple">Claude APIs</span>
+          <span class="skill-pill sp-purple">Machine Learning</span>
+          <span class="skill-pill sp-purple">scikit-learn</span>
+          <span class="skill-pill sp-purple">Prompt Engineering</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-up" style="--delay:.2s">
+        <h4 class="skill-cat-label"><i class="fas fa-code"></i> Languages</h4>
+        <div class="skill-pills">
+          <span class="skill-pill sp-blue">Python</span>
+          <span class="skill-pill sp-blue">JavaScript</span>
+          <span class="skill-pill sp-blue">HTML / CSS</span>
+          <span class="skill-pill sp-blue">SQL</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-up" style="--delay:.3s">
+        <h4 class="skill-cat-label"><i class="fas fa-layer-group"></i> Frameworks</h4>
+        <div class="skill-pills">
+          <span class="skill-pill sp-teal">React</span>
+          <span class="skill-pill sp-teal">Flask</span>
+          <span class="skill-pill sp-teal">Streamlit</span>
+          <span class="skill-pill sp-teal">SAP CAP</span>
+          <span class="skill-pill sp-teal">Node.js</span>
+        </div>
+      </div>
+      <div class="skill-category reveal-up" style="--delay:.4s">
+        <h4 class="skill-cat-label"><i class="fas fa-wrench"></i> Tools & Other</h4>
+        <div class="skill-pills">
+          <span class="skill-pill sp-yellow">GitHub</span>
+          <span class="skill-pill sp-yellow">Cybersecurity</span>
+          <span class="skill-pill sp-yellow">REST APIs</span>
+          <span class="skill-pill sp-yellow">SQLite</span>
+          <span class="skill-pill sp-yellow">Figma</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="section-label reveal-up">04 — Experience</div>
+    <h2 class="section-heading reveal-up" style="--delay:.1s">My <em>journey.</em></h2>
+    <div class="timeline">
+      <div class="timeline-item reveal-up" style="--delay:.1s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="timeline-date">2024 — Present</div>
+          <h3 class="timeline-role">AI Projects Developer</h3>
+          <div class="timeline-company">Self-directed · Open Source</div>
+          <p class="timeline-desc">Building AI-powered products independently — Resume Analyzer, InterviewIQ, RegAI — using OpenAI APIs, React, Flask, and Streamlit.</p>
+          <div class="timeline-tags"><span>OpenAI</span><span>React</span><span>Flask</span><span>Python</span></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up" style="--delay:.2s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="timeline-date">2023 — 2024</div>
+          <h3 class="timeline-role">Computer Science Student</h3>
+          <div class="timeline-company">University · B.Sc. Computer Science</div>
+          <p class="timeline-desc">Deep-diving into algorithms, data structures, machine learning, and cybersecurity. Built the Sports Career Prediction System and Rubrics Management System.</p>
+          <div class="timeline-tags"><span>ML</span><span>SAP CAP</span><span>Algorithms</span></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up" style="--delay:.3s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="timeline-date">2022 — 2023</div>
+          <h3 class="timeline-role">Web Developer (Self-taught)</h3>
+          <div class="timeline-company">Personal Projects</div>
+          <p class="timeline-desc">Started with HTML/CSS/JS, built the Recipe Finder App, and began learning React and backend development with Python and Flask.</p>
+          <div class="timeline-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label reveal-up" style="margin-top:5rem">Certifications</div>
+    <div class="certs-grid">
+      <div class="cert-card glass-card reveal-up" style="--delay:.1s"><div class="cert-icon">🤖</div><div class="cert-body"><h4>AI Fundamentals</h4><span class="cert-issuer">IBM · Coursera</span></div><div class="cert-badge">Verified</div></div>
+      <div class="cert-card glass-card reveal-up" style="--delay:.2s"><div class="cert-icon">🐍</div><div class="cert-body"><h4>Python for Data Science</h4><span class="cert-issuer">Coursera</span></div><div class="cert-badge">Verified</div></div>
+      <div class="cert-card glass-card reveal-up" style="--delay:.3s"><div class="cert-icon">🔐</div><div class="cert-body"><h4>Cybersecurity Essentials</h4><span class="cert-issuer">Cisco</span></div><div class="cert-badge">Verified</div></div>
+      <div class="cert-card glass-card reveal-up" style="--delay:.4s"><div class="cert-icon">☁️</div><div class="cert-body"><h4>Cloud Computing</h4><span class="cert-issuer">SAP</span></div><div class="cert-badge">Verified</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB -->
+<section id="github" class="section">
+  <div class="container">
+    <div class="section-label reveal-up">05 — GitHub</div>
+    <h2 class="section-heading reveal-up" style="--delay:.1s">Code <em>activity.</em></h2>
+    <div class="github-grid reveal-up" style="--delay:.2s">
+      <img src="https://github-readme-stats.vercel.app/api?username=chxrxv&show_icons=true&theme=transparent&title_color=CBA6F7&text_color=F5F5F5&icon_color=89B4FA&border_color=30363d&bg_color=161B22" alt="GitHub Stats" class="github-card" loading="lazy"/>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chxrxv&layout=compact&theme=transparent&title_color=CBA6F7&text_color=F5F5F5&border_color=30363d&bg_color=161B22" alt="Top Languages" class="github-card" loading="lazy"/>
+    </div>
+    <div class="reveal-up" style="--delay:.3s">
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=chxrxv&theme=github-dark&bg_color=161B22&color=CBA6F7&line=89B4FA&point=CBA6F7&area=true&hide_border=true" alt="Contribution Graph" class="github-contrib" loading="lazy"/>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-label reveal-up">06 — Contact</div>
+    <div class="contact-grid">
+      <div class="contact-left reveal-up" style="--delay:.1s">
+        <h2 class="section-heading">Let's build<br/>something <em>great.</em></h2>
+        <p class="contact-sub">I'm actively looking for internships and collaboration opportunities. If you're working on something interesting in AI or full-stack, reach out.</p>
+        <div class="contact-socials">
+          <a href="https://github.com/chxrxv" target="_blank" class="contact-social-link">
+            <i class="fab fa-github"></i><span>github.com/chxrxv</span><i class="fas fa-arrow-right arrow-right"></i>
+          </a>
+          <a href="https://linkedin.com/in/charuvisuresh" target="_blank" class="contact-social-link">
+            <i class="fab fa-linkedin"></i><span>linkedin.com/in/charuvisuresh</span><i class="fas fa-arrow-right arrow-right"></i>
+          </a>
+          <a href="mailto:charuvi@email.com" class="contact-social-link">
+            <i class="fas fa-envelope"></i><span>charuvi@email.com</span><i class="fas fa-arrow-right arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="contact-right reveal-up" style="--delay:.25s">
+        <form class="contact-form glass-card" id="contact-form">
+          <div class="form-group"><label for="name">Name</label><input type="text" id="name" placeholder="Your name" required/></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="you@company.com" required/></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" rows="4" placeholder="Tell me about the opportunity…" required></textarea></div>
+          <button type="submit" class="btn-primary full-width magnetic"><span>Send message</span><i class="fas fa-paper-plane"></i></button>
+          <div id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">CS<span class="acc">✦</span></div>
+      <p class="footer-copy">Designed & built by Charuvi Suresh · 2025</p>
+      <div class="footer-socials">
+        <a href="https://github.com/chxrxv" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/charuvisuresh" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">Made with curiosity · Deployed on GitHub Pages</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
