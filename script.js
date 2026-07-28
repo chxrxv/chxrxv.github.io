@@ -68,11 +68,11 @@ if (themeBtn) {
 
 /* ─── Typed text ──────────────────────────────────────────── */
 const phrases = [
-  'AI-Focused Full Stack Developer.',
-  'Building intelligent AI products.',
-  'Computer Science Student.',
-  'OpenAI · React · Flask · Python.',
-  'Open to internships · 2025.',
+  'Software Engineer · AI-ML Engineer.',
+  'Deployed AI and compliance systems.',
+  'Python · PyTorch · Firebase · Cloud Functions.',
+  'Built RAG, security triage, and computer vision products.',
+  'Open to engineering roles in AI and product systems.',
 ];
 let pi = 0, ci = 0, del = false;
 const typed = document.getElementById('typed-text');
