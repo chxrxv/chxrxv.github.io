@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="theme-color" content="#0D1117"/>
+  <meta name="color-scheme" content="dark light"/>
+  <link rel="canonical" href="https://chxrxv.github.io/"/>
   <title>Charuvi Suresh — Software Engineer / AI-ML Engineer</title>
   <meta name="description" content="Charuvi Suresh is a CS engineering student shipping deployed AI, cloud, and compliance systems with strong CS fundamentals and production-ready delivery."/>
   <meta name="keywords" content="Charuvi Suresh,Software Engineer,AI-ML Engineer,Python,PyTorch,Firebase,OpenAI,Gemini,Cloud Functions,portfolio"/>
@@ -11,9 +14,10 @@
   <meta property="og:url" content="https://chxrxv.github.io/"/>
   <meta property="og:title" content="Charuvi Suresh — Software Engineer / AI-ML Engineer"/>
   <meta property="og:description" content="CS engineering student building production-ready AI and cloud systems for compliance, security, and analytics."/>
-  <meta property="og:image" content="https://chxrxv.github.io/assets/og-image.png"/>
-  <meta property="twitter:card" content="summary_large_image"/>
-
+  <meta property="og:locale" content="en_US"/>
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:title" content="Charuvi Suresh — Software Engineer / AI-ML Engineer"/>
+  <meta name="twitter:description" content="CS engineering student building production-ready AI and cloud systems for compliance, security, and analytics."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
@@ -22,6 +26,8 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>"/>
 </head>
 <body>
+
+<a class="skip-link" href="#main">Skip to content</a>
 
 <!-- LOADER -->
 <div id="loader">
@@ -40,7 +46,7 @@
 <div id="scroll-progress"></div>
 
 <!-- NAV -->
-<nav id="navbar">
+<nav id="navbar" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">CS<span class="acc">✦</span></a>
     <ul class="nav-links">
@@ -49,15 +55,14 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="resume.pdf" download>Resume</a></li>
     </ul>
     <div class="nav-actions">
-      <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+      <button id="theme-toggle" type="button" aria-label="Switch to light theme"><i class="fas fa-moon" aria-hidden="true"></i></button>
       <a href="#contact" class="nav-cta">Let's talk</a>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
-  <div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
@@ -67,7 +72,8 @@
 </nav>
 
 <!-- HERO -->
-<section id="hero">
+<main id="main">
+<section id="hero" aria-labelledby="hero-title">
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
   <div class="blob blob-3"></div>
@@ -78,21 +84,48 @@
       <span class="badge-dot"></span>
       Software Engineer · AI-ML Engineer
     </div>
-    <h1 class="hero-name reveal-up" style="--delay:.2s">Charuvi<br/><em>Suresh.</em></h1>
+    <h1 class="hero-name reveal-up" id="hero-title" style="--delay:.2s">Charuvi<br/><em>Suresh.</em></h1>
     <div class="hero-role reveal-up" style="--delay:.35s"><span id="typed-text"></span><span class="cursor-blink">|</span></div>
     <p class="hero-bio reveal-up" style="--delay:.5s">AI-driven CS engineering student shipping deployed systems for compliance, security, and analytics. I build production-ready products with strong fundamentals and measurable impact.</p>
     <div class="hero-ctas reveal-up" style="--delay:.65s">
       <a href="#projects" class="btn-primary magnetic"><span>View my work</span><i class="fas fa-arrow-right"></i></a>
-      <a href="resume.pdf" download class="btn-ghost magnetic"><i class="fas fa-download"></i><span>Resume</span></a>
+      <a href="#experience" class="btn-ghost magnetic"><i class="fas fa-arrow-down"></i><span>Explore my experience</span></a>
     </div>
     <div class="hero-socials reveal-up" style="--delay:.8s">
-      <a href="https://github.com/chxrxv" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/charuvisuresh" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-      <a href="https://chxrxv.github.io" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>
-      <a href="https://leetcode.com/chxrxv" target="_blank" class="social-icon"><i class="fas fa-laptop-code"></i></a>
-      <a href="mailto:charuvisuresh@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/chxrxv" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a href="https://linkedin.com/in/charuvisuresh" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://chxrxv.github.io" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Portfolio website"><i class="fas fa-globe" aria-hidden="true"></i></a>
+      <a href="https://leetcode.com/chxrxv" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LeetCode"><i class="fas fa-laptop-code" aria-hidden="true"></i></a>
+      <a href="mailto:charuvisuresh@gmail.com" class="social-icon" aria-label="Email Charuvi"><i class="fas fa-envelope" aria-hidden="true"></i></a>
     </div>
   </div>
+  <aside class="hero-showcase reveal-up" style="--delay:.35s" aria-label="Featured project: OrdInex">
+    <div class="showcase-card">
+      <div class="showcase-topline">
+        <span class="showcase-window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="showcase-file">featured / ordinex</span>
+        <span class="showcase-status"><span></span> case study</span>
+      </div>
+      <div class="showcase-body">
+        <span class="showcase-kicker">01 / AI · COMPLIANCE</span>
+        <h2>Make complex rules<br/><em>easier to navigate.</em></h2>
+        <p>A closer look at an AI-powered regulatory compliance platform.</p>
+        <div class="showcase-flow" aria-label="Document analysis workflow">
+          <span><i class="fas fa-file-lines" aria-hidden="true"></i> Policy</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i> AI analysis</span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          <span><i class="fas fa-list-check" aria-hidden="true"></i> Findings</span>
+        </div>
+        <div class="showcase-bottom">
+          <span>Gemini · Firebase · RAG</span>
+          <a href="https://github.com/chxrxv/ordinex" target="_blank" rel="noopener noreferrer">Explore project <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="showcase-orbit showcase-orbit-one" aria-hidden="true"></div>
+    <div class="showcase-orbit showcase-orbit-two" aria-hidden="true"></div>
+  </aside>
   <div class="hero-scroll-hint"><div class="scroll-line"></div><span>scroll</span></div>
 </section>
 
@@ -106,8 +139,8 @@
         <p class="about-text">CS engineering student with experience shipping AI and cloud applications. I build end-to-end systems that automate compliance, triage security findings, and deliver real product value.</p>
         <p class="about-text">My toolkit spans <strong>Python, PyTorch, Firebase, Cloud Functions, and modern ML APIs</strong>. I prioritize reliable deployment, reproducible pipelines, and strong CS fundamentals.</p>
         <div class="about-stats">
-          <div class="stat-item"><span class="stat-num">4+</span><span class="stat-label">Deployed AI systems</span></div>
-          <div class="stat-item"><span class="stat-num">85%</span><span class="stat-label">Vision model accuracy</span></div>
+          <div class="stat-item"><span class="stat-num">10+</span><span class="stat-label">Public projects</span></div>
+          <div class="stat-item"><span class="stat-num">4</span><span class="stat-label">Technical focus areas</span></div>
           <div class="stat-item"><span class="stat-num">8.91</span><span class="stat-label">CPI / 10</span></div>
         </div>
       </div>
@@ -140,17 +173,21 @@
 <!-- PROJECTS -->
 <section id="projects" class="section">
   <div class="container">
-    <div class="section-label reveal-up">02 — Projects</div>
+    <div class="section-label reveal-up">02 — Selected work</div>
     <div class="section-header reveal-up" style="--delay:.1s">
-      <h2 class="section-heading">Things I've <em>built.</em></h2>
-      <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="ai">AI/ML</button>
-        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-        <button class="filter-btn" data-filter="security">Security</button>
+      <div>
+        <h2 class="section-heading">A few things I've <em>made.</em></h2>
+        <p class="projects-intro">From research prototypes to complete products, these projects show how I think, build, and explore.</p>
+      </div>
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">Everything</button>
+        <button class="filter-btn" type="button" data-filter="ai" aria-pressed="false">AI / ML</button>
+        <button class="filter-btn" type="button" data-filter="fullstack" aria-pressed="false">Products</button>
+        <button class="filter-btn" type="button" data-filter="cloud" aria-pressed="false">Cloud / data</button>
+        <button class="filter-btn" type="button" data-filter="security" aria-pressed="false">Security</button>
       </div>
     </div>
-    <div class="projects-bento">
+    <div class="projects-bento" id="project-grid">
 
       <!-- OrdInex -->
       <div class="project-card featured reveal-up" style="--delay:.1s" data-category="ai fullstack security">
@@ -161,13 +198,12 @@
             <span class="ptag ptag-featured">⭐ Featured</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/chxrxv/ordinex" target="_blank" class="plink"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" class="plink live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/chxrxv/ordinex" target="_blank" rel="noopener noreferrer" class="plink" aria-label="View OrdInex on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
           </div>
         </div>
-        <div class="project-icon">🧾</div>
-        <h3 class="project-title">OrdInex (RegAI)</h3>
-        <p class="project-desc">AI regulatory compliance platform that benchmarks privacy policies and T&Cs against GDPR and multi-jurisdiction rules, reducing manual legal review from 4+ hours to under 30 minutes.</p>
+        <div class="project-icon" aria-hidden="true">🧾</div>
+        <h3 class="project-title">OrdInex</h3>
+        <p class="project-desc">An AI-powered regulatory compliance and risk intelligence platform for analyzing policy documents, comparing them with regulations, and surfacing compliance gaps and actionable recommendations.</p>
         <div class="project-footer">
           <div class="project-stack"><span>JavaScript</span><span>Firebase</span><span>Gemini API</span><span>RAG</span><span>Docker</span></div>
         </div>
@@ -179,8 +215,7 @@
         <div class="project-meta">
           <div class="project-tags"><span class="ptag">Python</span><span class="ptag">Claude API</span><span class="ptag">Nmap</span></div>
           <div class="project-links">
-            <a href="https://github.com/chxrxv/sectriage" target="_blank" class="plink"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" class="plink live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/chxrxv/SecTriage" target="_blank" rel="noopener noreferrer" class="plink" aria-label="View SecTriage on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="project-icon">🛡️</div>
@@ -191,61 +226,138 @@
         </div>
       </div>
 
-      <!-- Sports Career Prediction -->
-      <div class="project-card reveal-up" style="--delay:.25s" data-category="ai data">
+      <!-- Sportify -->
+      <div class="project-card reveal-up" style="--delay:.25s" data-category="ai fullstack">
         <div class="project-glow"></div>
         <div class="project-meta">
-          <div class="project-tags"><span class="ptag">PyTorch</span><span class="ptag">Computer Vision</span><span class="ptag">Streamlit</span></div>
+          <div class="project-tags"><span class="ptag">React</span><span class="ptag">TensorFlow.js</span><span class="ptag">PWA</span></div>
           <div class="project-links">
-            <a href="https://github.com/chxrxv/sports-career-prediction" target="_blank" class="plink"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" class="plink live"><i class="fas fa-arrow-up-right-from-square"></i></a>
+            <a href="https://github.com/chxrxv/Sportify-AI-Sports-Talent-Analysis" target="_blank" rel="noopener noreferrer" class="plink" aria-label="View Sportify on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
           </div>
         </div>
-        <div class="project-icon">🏅</div>
-        <h3 class="project-title">Sports Career Prediction</h3>
-        <p class="project-desc">Image-based athlete career prediction system with CNN classification, feature extraction, and an interactive Streamlit deployment reaching ~85% accuracy on career-path recommendations.</p>
+        <div class="project-icon" aria-hidden="true">🏅</div>
+        <h3 class="project-title">Sportify</h3>
+        <p class="project-desc">A sports talent-analysis PWA that uses browser-based pose detection to assess movement, score athletic attributes, and suggest sports. Includes English and Hindi, offline support, and on-device data storage.</p>
         <div class="project-footer">
-          <div class="project-stack"><span>PyTorch</span><span>Streamlit</span><span>Computer Vision</span><span>Python</span></div>
+          <div class="project-stack"><span>React</span><span>TensorFlow.js</span><span>MediaPipe</span><span>IndexedDB</span></div>
         </div>
       </div>
 
-      <!-- Rubrics -->
+      <!-- Maritime awareness -->
+      <div class="project-card reveal-up" style="--delay:.3s" data-category="ai data">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags"><span class="ptag">Python</span><span class="ptag">AI</span><span class="ptag">Situational awareness</span></div>
+          <div class="project-links">
+            <a href="https://github.com/chxrxv/AI-Based-Maritime-Situational-Awareness-System" target="_blank" rel="noopener noreferrer" class="plink" aria-label="View the Maritime Situational Awareness System on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="project-icon" aria-hidden="true">🛰️</div>
+        <h3 class="project-title">Maritime Situational Awareness</h3>
+        <p class="project-desc">An AI-based maritime situational-awareness system developed during my AI internship at Bharat Electronics Limited.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span>AI internship project</span><span>Bharat Electronics Limited</span></div>
+        </div>
+      </div>
+
+      <!-- Expenzo -->
+      <div class="project-card reveal-up" style="--delay:.15s" data-category="ai fullstack">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags"><span class="ptag">Next.js</span><span class="ptag">TypeScript</span><span class="ptag">MongoDB</span></div>
+          <div class="project-links">
+            <a href="https://github.com/chxrxv/Expenzo" target="_blank" rel="noopener noreferrer" class="plink" aria-label="View Expenzo on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="project-icon" aria-hidden="true">💸</div>
+        <h3 class="project-title">Expenzo</h3>
+        <p class="project-desc">A full-stack finance and productivity dashboard for managing expenses, income, budgets, and tasks, with interactive analytics and downloadable PDF reports.</p>
+        <div class="project-footer">
+          <div class="project-stack"><span>Next.js</span><span>TypeScript</span><span>Express</span><span>MongoDB</span></div>
+        </div>
+      </div>
+
+      <!-- InterviewIQ -->
+      <div class="project-card reveal-up" style="--delay:.2s" data-category="ai fullstack">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags"><span class="ptag">Python</span><span class="ptag">Streamlit</span><span class="ptag">OpenAI</span></div>
+          <div class="project-links"><a href="https://github.com/chxrxv/InterviewIQ" target="_blank" rel="noopener noreferrer" class="plink" aria-label="View InterviewIQ on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></div>
+        </div>
+        <div class="project-icon" aria-hidden="true">🎙️</div>
+        <h3 class="project-title">InterviewIQ</h3>
+        <p class="project-desc">An AI interview-practice assistant with role-specific questions, mock interviews, answer feedback, confidence scoring, keyword analysis, and a private local session history.</p>
+        <div class="project-footer"><div class="project-stack"><span>Python</span><span>Streamlit</span><span>OpenAI API</span><span>SQLite</span></div></div>
+      </div>
+
+      <!-- ResumeIQ -->
+      <div class="project-card reveal-up" style="--delay:.25s" data-category="ai fullstack">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags"><span class="ptag">React</span><span class="ptag">Flask</span><span class="ptag">OpenAI</span></div>
+          <div class="project-links"><a href="https://github.com/chxrxv/Resume-Analyzer" target="_blank" rel="noopener noreferrer" class="plink" aria-label="View ResumeIQ on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></div>
+        </div>
+        <div class="project-icon" aria-hidden="true">📄</div>
+        <h3 class="project-title">ResumeIQ</h3>
+        <p class="project-desc">An AI resume analyzer that extracts resume content, assesses ATS compatibility, highlights skill gaps, and compares a resume with a job description.</p>
+        <div class="project-footer"><div class="project-stack"><span>React</span><span>Flask</span><span>OpenAI API</span><span>PDF analysis</span></div></div>
+      </div>
+
+      <!-- Yumify -->
       <div class="project-card reveal-up" style="--delay:.3s" data-category="fullstack">
         <div class="project-glow"></div>
         <div class="project-meta">
-          <div class="project-tags"><span class="ptag">Python</span><span class="ptag">Streamlit</span><span class="ptag">SQL</span></div>
-          <div class="project-links">
-            <a href="https://github.com/chxrxv/rubrics-management-system" target="_blank" class="plink"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" class="plink live"><i class="fas fa-arrow-up-right-from-square"></i></a>
-          </div>
+          <div class="project-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span></div>
+          <div class="project-links"><a href="https://github.com/chxrxv/Yumify-Recipe-Finder" target="_blank" rel="noopener noreferrer" class="plink" aria-label="View Yumify on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></div>
         </div>
-        <div class="project-icon">📋</div>
-        <h3 class="project-title">Rubrics Management System</h3>
-        <p class="project-desc">Automated rubric-based evaluation platform that uses dynamic scoring weights and role-based access to cut instructor grading time by ~60%.</p>
-        <div class="project-footer">
-          <div class="project-stack"><span>Python</span><span>Streamlit</span><span>SQL</span><span>REST API</span></div>
-        </div>
+        <div class="project-icon" aria-hidden="true">🍳</div>
+        <h3 class="project-title">Yumify</h3>
+        <p class="project-desc">A responsive recipe finder for discovering meals by name or ingredient, filtering by diet, saving favorites, and following step-by-step cooking instructions.</p>
+        <div class="project-footer"><div class="project-stack"><span>JavaScript</span><span>TheMealDB API</span><span>Local storage</span></div></div>
       </div>
 
-      <!-- Recipe -->
-      <div class="project-card reveal-up" style="--delay:.15s" data-category="fullstack">
+      <!-- StreamForge -->
+      <div class="project-card reveal-up" style="--delay:.1s" data-category="cloud data">
         <div class="project-glow"></div>
         <div class="project-meta">
-          <div class="project-tags"><span class="ptag">HTML5</span><span class="ptag">CSS3</span><span class="ptag">JavaScript</span></div>
-          <div class="project-links">
-            <a href="https://github.com/chxrxv/recipe-finder-app" target="_blank" class="plink"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" class="plink live"><i class="fas fa-arrow-up-right-from-square"></i></a>
-          </div>
+          <div class="project-tags"><span class="ptag">Python</span><span class="ptag">AWS</span><span class="ptag">CDK</span><span class="ptag ptag-featured">In progress</span></div>
+          <div class="project-links"><a href="https://github.com/chxrxv/streamforge" target="_blank" rel="noopener noreferrer" class="plink" aria-label="View StreamForge on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></div>
         </div>
-        <div class="project-icon">🍳</div>
-        <h3 class="project-title">Recipe Finder Web App</h3>
-        <p class="project-desc">Responsive ingredient-to-recipe web app with third-party API integration, client-side caching, debounced search, and local vendor walkthrough links.</p>
-        <div class="project-footer">
-          <div class="project-stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>REST APIs</span></div>
+        <div class="project-icon" aria-hidden="true">🌊</div>
+        <h3 class="project-title">StreamForge</h3>
+        <p class="project-desc">A real-time data platform project with a working local ingestion API, validation, idempotency, observable metrics, and AWS CDK infrastructure. AWS deployment and later roadmap phases are not yet complete.</p>
+        <div class="project-footer"><div class="project-stack"><span>Python</span><span>AWS Lambda</span><span>S3</span><span>DynamoDB</span><span>CDK</span></div></div>
+      </div>
+
+      <!-- Meridian -->
+      <div class="project-card reveal-up" style="--delay:.15s" data-category="ai security cloud">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags"><span class="ptag">Python</span><span class="ptag">Gemini</span><span class="ptag">RAG</span><span class="ptag ptag-featured">In progress</span></div>
+          <div class="project-links"><a href="https://github.com/chxrxv/meridian" target="_blank" rel="noopener noreferrer" class="plink" aria-label="View Meridian on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></div>
         </div>
+        <div class="project-icon" aria-hidden="true">🧭</div>
+        <h3 class="project-title">Meridian</h3>
+        <p class="project-desc">An early-stage, permission-aware RAG and agent project for a fictional logistics company. Phase two is complete; it uses synthetic data and is not deployed to Google Cloud.</p>
+        <div class="project-footer"><div class="project-stack"><span>Python</span><span>Google ADK</span><span>Gemini</span><span>RAG</span><span>Evaluation</span></div></div>
+      </div>
+
+      <!-- CloudSherpa -->
+      <div class="project-card reveal-up" style="--delay:.2s" data-category="ai cloud">
+        <div class="project-glow"></div>
+        <div class="project-meta">
+          <div class="project-tags"><span class="ptag">Python</span><span class="ptag">Google Cloud</span><span class="ptag">RAG</span><span class="ptag ptag-featured">In progress</span></div>
+          <div class="project-links"><a href="https://github.com/chxrxv/CloudSherpa" target="_blank" rel="noopener noreferrer" class="plink" aria-label="View CloudSherpa on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></div>
+        </div>
+        <div class="project-icon" aria-hidden="true">☁️</div>
+        <h3 class="project-title">CloudSherpa</h3>
+        <p class="project-desc">An early-stage multi-agent cloud architecture assistant. Its first phase combines hybrid retrieval and cited Google Cloud documentation; later product and infrastructure features remain on the roadmap.</p>
+        <div class="project-footer"><div class="project-stack"><span>Python</span><span>Gemini</span><span>Google ADK</span><span>Hybrid RAG</span></div></div>
       </div>
 
     </div>
+    <p class="visually-hidden" id="project-status" aria-live="polite"></p>
+    <p class="projects-more reveal-up">There’s more where that came from. <a href="https://github.com/chxrxv?tab=repositories" target="_blank" rel="noopener noreferrer">Explore all my public projects on GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></p>
   </div>
 </section>
 
@@ -313,6 +425,16 @@
       <div class="timeline-item reveal-up" style="--delay:.1s">
         <div class="timeline-dot"></div>
         <div class="timeline-content glass-card">
+          <div class="timeline-date">Aug — Sep 2026</div>
+          <h3 class="timeline-role">AI Intern</h3>
+          <div class="timeline-company">Bharat Electronics Limited</div>
+          <p class="timeline-desc">Worked on the AI-Based Maritime Situational Awareness System during my internship.</p>
+          <div class="timeline-tags"><span>Artificial Intelligence</span><span>Maritime systems</span><a href="https://github.com/chxrxv/AI-Based-Maritime-Situational-Awareness-System" target="_blank" rel="noopener noreferrer">View internship project <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up" style="--delay:.1s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
           <div class="timeline-date">Apr — May 2025</div>
           <h3 class="timeline-role">Data Science Intern</h3>
           <div class="timeline-company">Synnet Technologies</div>
@@ -344,10 +466,10 @@
 
     <div class="section-label reveal-up" style="margin-top:5rem">Certifications</div>
     <div class="certs-grid">
-      <div class="cert-card glass-card reveal-up" style="--delay:.1s"><div class="cert-icon">🛠️</div><div class="cert-body"><h4>SAP Certified — Backend Developer</h4><span class="cert-issuer">SAP Cloud Application Programming Model · May 2026</span></div><div class="cert-badge">Verified</div></div>
-      <div class="cert-card glass-card reveal-up" style="--delay:.2s"><div class="cert-icon">☁️</div><div class="cert-body"><h4>AWS Solutions Architect Associate</h4><span class="cert-issuer">Udemy · Hands-On Training · May 2026</span></div><div class="cert-badge">Verified</div></div>
-      <div class="cert-card glass-card reveal-up" style="--delay:.3s"><div class="cert-icon">⚙️</div><div class="cert-body"><h4>Overview of Agile & DevOps</h4><span class="cert-issuer">Infosys Springboard · Nov 2025</span></div><div class="cert-badge">Verified</div></div>
-      <div class="cert-card glass-card reveal-up" style="--delay:.4s"><div class="cert-icon">📈</div><div class="cert-body"><h4>Project Management with Agile</h4><span class="cert-issuer">Infosys Springboard · Nov 2025</span></div><div class="cert-badge">Verified</div></div>
+      <div class="cert-card glass-card reveal-up" style="--delay:.1s"><div class="cert-icon">🛠️</div><div class="cert-body"><h4>SAP Certified — Backend Developer</h4><span class="cert-issuer">SAP Cloud Application Programming Model · May 2026</span></div><div class="cert-badge">Certification</div></div>
+      <div class="cert-card glass-card reveal-up" style="--delay:.2s"><div class="cert-icon">☁️</div><div class="cert-body"><h4>AWS Solutions Architect Associate</h4><span class="cert-issuer">Udemy · Hands-On Training · May 2026</span></div><div class="cert-badge">Training</div></div>
+      <div class="cert-card glass-card reveal-up" style="--delay:.3s"><div class="cert-icon">⚙️</div><div class="cert-body"><h4>Overview of Agile & DevOps</h4><span class="cert-issuer">Infosys Springboard · Nov 2025</span></div><div class="cert-badge">Course</div></div>
+      <div class="cert-card glass-card reveal-up" style="--delay:.4s"><div class="cert-icon">📈</div><div class="cert-body"><h4>Project Management with Agile</h4><span class="cert-issuer">Infosys Springboard · Nov 2025</span></div><div class="cert-badge">Course</div></div>
     </div>
   </div>
 </section>
@@ -358,12 +480,14 @@
     <div class="section-label reveal-up">05 — GitHub</div>
     <h2 class="section-heading reveal-up" style="--delay:.1s">Code <em>activity.</em></h2>
     <div class="github-grid reveal-up" style="--delay:.2s">
-      <img src="https://github-readme-stats.vercel.app/api?username=chxrxv&show_icons=true&theme=transparent&title_color=CBA6F7&text_color=F5F5F5&icon_color=89B4FA&border_color=30363d&bg_color=161B22" alt="GitHub Stats" class="github-card" loading="lazy"/>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chxrxv&layout=compact&theme=transparent&title_color=CBA6F7&text_color=F5F5F5&border_color=30363d&bg_color=161B22" alt="Top Languages" class="github-card" loading="lazy"/>
+      <img src="https://github-readme-stats.vercel.app/api?username=chxrxv&show_icons=true&theme=transparent&title_color=CBA6F7&text_color=F5F5F5&icon_color=89B4FA&border_color=30363d&bg_color=161B22" alt="GitHub profile statistics for Charuvi Suresh" class="github-card" loading="lazy"/>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chxrxv&layout=compact&theme=transparent&title_color=CBA6F7&text_color=F5F5F5&border_color=30363d&bg_color=161B22" alt="Most-used programming languages on Charuvi's GitHub" class="github-card" loading="lazy"/>
     </div>
     <div class="reveal-up" style="--delay:.3s">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=chxrxv&theme=github-dark&bg_color=161B22&color=CBA6F7&line=89B4FA&point=CBA6F7&area=true&hide_border=true" alt="Contribution Graph" class="github-contrib" loading="lazy"/>
+      <img src="https://ghchart.rshah.org/CBA6F7/chxrxv" alt="GitHub contribution graph for Charuvi Suresh over the past year" class="github-contrib" width="663" height="104" loading="lazy" decoding="async"/>
+      <p class="github-chart-note">Daily contributions over the past year · <a href="https://github.com/chxrxv" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
     </div>
+    <a class="github-profile-link" href="https://github.com/chxrxv" target="_blank" rel="noopener noreferrer">Explore all repositories <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
   </div>
 </section>
 
@@ -374,18 +498,18 @@
     <div class="contact-grid">
       <div class="contact-left reveal-up" style="--delay:.1s">
         <h2 class="section-heading">Let's build<br/>something <em>great.</em></h2>
-        <p class="contact-sub">I'm actively hiring for Software Engineering and AI/ML roles. Reach out if you need product-ready systems, security tooling, or AI automation delivered end-to-end.</p>
+        <p class="contact-sub">I'm open to Software Engineering and AI/ML opportunities. Reach out to talk about product-ready systems, security tooling, or AI automation delivered end to end.</p>
         <div class="contact-socials">
-          <a href="https://github.com/chxrxv" target="_blank" class="contact-social-link">
+          <a href="https://github.com/chxrxv" target="_blank" rel="noopener noreferrer" class="contact-social-link">
             <i class="fab fa-github"></i><span>github.com/chxrxv</span><i class="fas fa-arrow-right arrow-right"></i>
           </a>
-          <a href="https://linkedin.com/in/charuvisuresh" target="_blank" class="contact-social-link">
+          <a href="https://linkedin.com/in/charuvisuresh" target="_blank" rel="noopener noreferrer" class="contact-social-link">
             <i class="fab fa-linkedin"></i><span>linkedin.com/in/charuvisuresh</span><i class="fas fa-arrow-right arrow-right"></i>
           </a>
-          <a href="https://chxrxv.github.io" target="_blank" class="contact-social-link">
+          <a href="https://chxrxv.github.io" target="_blank" rel="noopener noreferrer" class="contact-social-link">
             <i class="fas fa-globe"></i><span>chxrxv.github.io</span><i class="fas fa-arrow-right arrow-right"></i>
           </a>
-          <a href="https://leetcode.com/chxrxv" target="_blank" class="contact-social-link">
+          <a href="https://leetcode.com/chxrxv" target="_blank" rel="noopener noreferrer" class="contact-social-link">
             <i class="fas fa-laptop-code"></i><span>leetcode.com/chxrxv</span><i class="fas fa-arrow-right arrow-right"></i>
           </a>
           <a href="mailto:charuvisuresh@gmail.com" class="contact-social-link">
@@ -394,17 +518,19 @@
         </div>
       </div>
       <div class="contact-right reveal-up" style="--delay:.25s">
-        <form class="contact-form glass-card" id="contact-form">
-          <div class="form-group"><label for="name">Name</label><input type="text" id="name" placeholder="Your name" required/></div>
-          <div class="form-group"><label for="email">Email</label><input type="email" id="email" placeholder="you@company.com" required/></div>
-          <div class="form-group"><label for="message">Message</label><textarea id="message" rows="4" placeholder="Tell me about the opportunity…" required></textarea></div>
+        <form class="contact-form glass-card" id="contact-form" action="mailto:charuvisuresh@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required/></div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" placeholder="you@company.com" required/></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell me about the opportunity…" required></textarea></div>
           <button type="submit" class="btn-primary full-width magnetic"><span>Send message</span><i class="fas fa-paper-plane"></i></button>
-          <div id="form-status"></div>
+          <p class="form-note">Your email app will open with your message ready to send. No data is stored on this site.</p>
+          <div id="form-status" role="status" aria-live="polite"></div>
         </form>
       </div>
     </div>
   </div>
 </section>
+</main>
 
 <!-- FOOTER -->
 <footer id="footer">
@@ -413,10 +539,10 @@
       <div class="footer-logo">CS<span class="acc">✦</span></div>
       <p class="footer-copy">Designed & built by Charuvi Suresh · 2026</p>
       <div class="footer-socials">
-        <a href="https://github.com/chxrxv" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/charuvisuresh" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://chxrxv.github.io" target="_blank"><i class="fas fa-globe"></i></a>
-        <a href="https://leetcode.com/chxrxv" target="_blank"><i class="fas fa-laptop-code"></i></a>
+        <a href="https://github.com/chxrxv" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="https://linkedin.com/in/charuvisuresh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://chxrxv.github.io" target="_blank" rel="noopener noreferrer" aria-label="Portfolio website"><i class="fas fa-globe" aria-hidden="true"></i></a>
+        <a href="https://leetcode.com/chxrxv" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fas fa-laptop-code" aria-hidden="true"></i></a>
       </div>
     </div>
     <div class="footer-bottom">Made with curiosity · Deployed on GitHub Pages</div>
