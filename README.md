@@ -22,7 +22,7 @@ The project gallery links to selected public repositories. Use the GitHub profil
 - Adjust styles, design tokens, and responsive layouts in `style.css`.
 - Update theme, navigation, project filtering, and animation behavior in `script.js`.
 - Replace `Charuvi-Suresh-Resume.pdf` when the resume is updated; the page links to this local PDF for download.
-- Contact actions use direct email links. The site has no message form or backend.
+- Contact actions use direct email links with a copy-to-clipboard fallback. The site has no message form or backend.
 
 ## Deploy
 

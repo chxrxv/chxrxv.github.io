@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <link rel="stylesheet" href="style.css?v=portfolio-qa-20261028c"/>
+  <link rel="stylesheet" href="style.css?v=portfolio-qa-20261028d"/>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>"/>
 </head>
 <body>
@@ -616,9 +616,11 @@
           <p>Send me a note or download my resume for a concise overview of my background and work.</p>
           <div class="contact-actions">
             <a href="mailto:charuvisuresh@gmail.com?subject=Portfolio%20inquiry" class="btn-primary"><span>Email me</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <button type="button" class="btn-ghost copy-email-button" id="copy-email" data-email="charuvisuresh@gmail.com" aria-label="Copy Charuvi Suresh's email address"><i class="far fa-copy" aria-hidden="true"></i><span>Copy email</span></button>
             <a href="Charuvi-Suresh-Resume.pdf" class="btn-ghost" download="Charuvi-Suresh-Resume.pdf" aria-label="Download Charuvi Suresh's resume as a PDF"><i class="fas fa-download" aria-hidden="true"></i><span>Download Resume</span></a>
           </div>
-          <p class="contact-privacy-note">Email opens in your default mail application. This site does not collect or store messages.</p>
+          <p class="email-copy-status" id="email-copy-status" role="status" aria-live="polite"></p>
+          <p class="contact-privacy-note">Email opens in your default mail application. If it does not open, use Copy email. This site does not collect or store messages.</p>
         </div>
       </div>
     </div>
@@ -643,6 +645,6 @@
   </div>
 </footer>
 
-<script src="script.js?v=portfolio-qa-20261028c"></script>
+<script src="script.js?v=portfolio-qa-20261028d"></script>
 </body>
 </html>

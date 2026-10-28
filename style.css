@@ -438,6 +438,9 @@ body.ch #cursor-follower{width:52px;height:52px;border-color:rgba(203,166,247,0.
 .contact-cta-card>p{color:var(--text2);font-size:.88rem;line-height:1.7}
 .contact-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
 .contact-actions .btn-primary,.contact-actions .btn-ghost{justify-content:center}
+.copy-email-button{font-family:var(--font-b);background:transparent;cursor:pointer}
+.email-copy-status{width:100%;margin-top:.65rem;color:var(--text2);font-size:.78rem;line-height:1.5}
+.email-copy-status:empty{display:none}
 .contact-privacy-note{margin-top:1.2rem!important;color:var(--text3)!important;font-size:.73rem!important}
 
 /* ─── Footer ──────────────────────────────────────────────── */

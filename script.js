@@ -160,6 +160,36 @@ function initReveal() {
 
 initReveal();
 
+/* ─── Contact email fallback ─────────────────────────────── */
+const copyEmailButton = document.getElementById('copy-email');
+const emailCopyStatus = document.getElementById('email-copy-status');
+if (copyEmailButton && emailCopyStatus) {
+  copyEmailButton.addEventListener('click', async () => {
+    const email = copyEmailButton.dataset.email;
+    if (!email) return;
+    try {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(email);
+      } else {
+        const temporaryInput = document.createElement('textarea');
+        temporaryInput.value = email;
+        temporaryInput.setAttribute('readonly', '');
+        temporaryInput.style.position = 'fixed';
+        temporaryInput.style.opacity = '0';
+        document.body.append(temporaryInput);
+        temporaryInput.select();
+        const copied = document.execCommand('copy');
+        temporaryInput.remove();
+        if (!copied) throw new Error('The browser did not allow copying to the clipboard.');
+      }
+      emailCopyStatus.textContent = 'Email address copied to clipboard.';
+    } catch (error) {
+      console.warn('Unable to copy the email address.', error);
+      emailCopyStatus.textContent = `Copy was blocked. Email me at ${email}.`;
+    }
+  });
+}
+
 /* ─── Project filter ──────────────────────────────────────── */
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
